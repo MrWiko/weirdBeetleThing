@@ -87,7 +87,7 @@ footer {
   padding: 10vh 5%;
 }
 footer > div {
-  width: 70ch;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
