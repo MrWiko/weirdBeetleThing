@@ -1,0 +1,9 @@
+Proszę wpisać skład grup: https://forms.gle/iKutMidsvwA4a91u6
+Proszę oddać wszystkie pliki Tworzące Waszą stronę koniecznie spakowane do jednego folderu.
+Minimum wymagań: zewnętrzny plik CSS strona główna index.html i 2 podstrony według własnego projektu oraz strona o nazwie Informacje/ Newsy zawierające:
+skład zespołu (kierownik czcionką pogrubioną),
+motywacja co do wybranego tematu strony,
+spis inspiracji w formie linków,
+spis materiałów, z których korzystaliście w formie linków,
+konkretny podział prac w zespole tzn. zakres odpowiedzialności poszczególnych osób.
+Wasza strona musi zawierać wyraźny layout, tytuł strony na karcie przeglądarki oraz ikonę (https://www.w3schools.com/html/html_favicon.asp), standard kodowania utf-8, powinna być responsywna, hiperłącze wewnętrzne i zewnętrzne, zdjęcie, tabelę, listę numerowaną bądź nienumerowaną

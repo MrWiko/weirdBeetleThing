@@ -1,0 +1,173 @@
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --zomp: #619b8aff;
+  --text: #f0f8ff;
+}
+body {
+  color: var(--text);
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body * {
+  font-family: "EB Garamond", serif;
+}
+.mainHeader {
+  border-bottom: #f0f8ff solid 0px;
+  background: url("/imgs/bigBeetle.jpg");
+  object-fit: cover;
+  height: 100vh;
+  background-size: cover;
+  border-bottom: rgb(37, 37, 37) 4px solid;
+}
+main {
+  background: var(--text);
+}
+.mainHeader span {
+  font-family: "Sofia", cursive;
+  font-size: 12rem;
+}
+.spanInHeader {
+  padding: 17vh 0 0 30px;
+  transition-property: all;
+}
+.backToHome {
+  position: fixed;
+  left: 2vw;
+  top: 2vw;
+  width: 60px;
+  aspect-ratio: 1;
+  transition-property: all;
+  opacity: 0;
+}
+.mainSecWrap {
+  justify-items: center;
+}
+.mainSecWrap > div {
+  background: #f0f8ff;
+  display: flex;
+  align-items: center;
+  gap: max(20px, 10%);
+  padding: 20vh 10%;
+  border-bottom: rgb(37, 37, 37) 4px solid;
+}
+.mainSecWrap > div:nth-child(2) {
+  background: var(--olivine);
+}
+.mainSecWrap > div > a {
+  transition: all 0.5s;
+}
+.mainSecWrap > div > a:hover {
+  opacity: 0.8;
+}
+.mainSecWrap > div img {
+  width: 100%;
+  max-width: 1000px;
+  min-width: 200px;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+.tekst {
+  width: 60ch;
+  font-size: 3rem;
+  color: black;
+}
+footer {
+  background-color: rgb(97, 161, 82);
+  font-size: 4rem;
+  padding: 10vh 5%;
+}
+footer > div {
+  width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+footer > div > a,
+footer > div > a:visited {
+  text-decoration: none;
+  color: var(--pumpkin);
+  background-image: linear-gradient(#fcca46ff, #fcca46ff);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+footer > div > a:hover,
+footer > div > a:focus,
+footer > div > a:active {
+  background-size: 100% 0.1em;
+}
+.artLink,
+.artLink:visited {
+  text-decoration: none;
+  color: rgb(202, 101, 34);
+  background-image: linear-gradient(#fcca46ff, #fcca46ff);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+.artLink:hover,
+.artLink:focus,
+.artLink:active {
+  background-size: 100% 0.1em;
+}
+
+
+.infoWrap{
+    background-color: var(--zomp);
+    font-size: 2rem;
+    width: 100%;
+    text-wrap: wrap;
+}
+.infoWrap ul{
+    margin: 0 10vw;
+    margin-bottom: 10vh;
+}
+.infoWrap h1{
+    margin: 0 9vw;
+    margin-top: 10vh;
+}
+
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #000000;
+    height: 100%;
+    width: 80%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+}
+
+.table_component th {
+    border: 1px solid #000000;
+    background-color: #fe7f2dff;
+    color: black;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
+.table_component tr td {
+    background-color: #fcca46ff;
+    color: black;
+}
