@@ -44,6 +44,10 @@ main {
   transition-property: all;
   opacity: 0;
 }
+.backToHome:hover {
+  outline: #f0f8ff 2px solid;
+  rotate: 360deg;
+}
 .mainSecWrap {
   justify-items: center;
 }
