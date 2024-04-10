@@ -124,6 +124,23 @@ footer > div > a:active {
 .artLink:active {
   background-size: 100% 0.1em;
 }
+.extLink,
+.extLink:visited {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: var(--charcoal);
+  background-image: linear-gradient(#fcca46ff, #fcca46ff);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+.extLink:hover,
+.extLink:focus,
+.extLink:active {
+  background-size: 100% 0.1em;
+}
 
 
 .infoWrap{
@@ -132,15 +149,26 @@ footer > div > a:active {
     width: 100%;
     text-wrap: wrap;
 }
-.infoWrap ul{
-    margin: 0 10vw;
-    margin-bottom: 10vh;
+ .infoWrap ul{
+    margin: 0;
 }
 .infoWrap h1{
-    margin: 0 9vw;
-    margin-top: 10vh;
+    margin: 0;
+    font-size: 5rem;
 }
-
+ul li{
+  font-size: 2.7rem;
+}
+.infoBlockWrap{
+  padding: 10vh 10%;
+  background: var(--zomp);
+  border-bottom: 1px solid #000000;
+  text-align: center;
+  list-style-position: inside;
+}
+.infoBlockWrap:nth-child(2){
+  background: var(--text);
+}
 .table_component {
     overflow: auto;
     width: 100%;
@@ -156,22 +184,26 @@ footer > div > a:active {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10vh;
 }
 
 .table_component th {
     border: 1px solid #000000;
-    background-color: #fe7f2dff;
+    background-color: var(--pumpkin);
     color: black;
-    padding: 5px;
+    padding: 2.5%
 }
 
 .table_component td {
     border: 1px solid #000000;
-    padding: 5px;
+    padding: 2%;
 }
 
 .table_component tr td {
-    background-color: #fcca46ff;
+    background-color: var(--olivine);
     color: black;
+}
+p {
+  width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
 }
