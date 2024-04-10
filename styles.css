@@ -115,7 +115,7 @@ footer > div > a:active {
   background-image: linear-gradient(#fcca46ff, #fcca46ff);
   background-size: 0% 0.1em;
   background-position-y: 100%;
-  background-position-x: 0%;
+  background-position-x: 100%;
   background-repeat: no-repeat;
   transition: background-size 0.2s ease-in-out;
 }
@@ -128,7 +128,7 @@ footer > div > a:active {
 .extLink:visited {
   font-size: 2.5rem;
   text-decoration: none;
-  color: var(--charcoal);
+  color: var(--text);
   background-image: linear-gradient(#fcca46ff, #fcca46ff);
   background-size: 0% 0.1em;
   background-position-y: 100%;
@@ -166,8 +166,12 @@ ul li{
   text-align: center;
   list-style-position: inside;
 }
-.infoBlockWrap:nth-child(2){
+.infoBlockWrap:nth-child(2n){
   background: var(--text);
+  color: #000000;
+}
+.infoBlockWrap:last-child{
+  margin-bottom: 20vh;
 }
 .table_component {
     overflow: auto;
@@ -190,7 +194,8 @@ ul li{
     border: 1px solid #000000;
     background-color: var(--pumpkin);
     color: black;
-    padding: 2.5%
+    padding: 2.5%;
+    font-size: 2.3rem;
 }
 
 .table_component td {
@@ -199,10 +204,11 @@ ul li{
 }
 
 .table_component tr td {
-    background-color: var(--olivine);
+    background-color: rgb(131, 187, 170);
     color: black;
 }
-p {
+
+#infoFooter {
   width: 70ch;
   margin-left: auto;
   margin-right: auto;
