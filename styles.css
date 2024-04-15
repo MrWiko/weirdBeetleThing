@@ -209,7 +209,7 @@ ul li{
 }
 
 #infoFooter {
-  width: 70ch;
+  width: min(80%, 70ch);
   margin-left: auto;
   margin-right: auto;
 }
