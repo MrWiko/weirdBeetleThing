@@ -42,7 +42,7 @@ main {
   top: 2vw;
   width: 60px;
   aspect-ratio: 1;
-  transition-property: all;
+  transition-property: all; 
   opacity: 0;
 }
 .backToHome:hover {
