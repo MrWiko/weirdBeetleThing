@@ -54,7 +54,7 @@ var textsEN = [
       readMore: '<a href="/podstrona3.html" class="artLink">Read more</a>',
     },
     {
-      footer: "More informations about the project: ",
+      footer: "More information about the project: ",
       readMore: '<a href="/informacje.html" class="artLink">here</a>',
     },
   ];
