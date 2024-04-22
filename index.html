@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beetles</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="switch.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,55 +23,69 @@
   </head>
   <body onload="fadeInHeader(0)">
     <header class="mainHeader">
+
+      <div class="switchWrap">
+        <img src="./imgs/flaga.png" alt="PL"></img>
+        <label class="switch">
+          <input type="checkbox" id="changeLanguage" onchange="switchMoved()">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
       <div class="spanInHeader">
         <span>Our favourite beetles</span>
       </div>
     </header>
 
     <main>
-      <section class="mainSecWrap">
-        <div>
-          <a href="/podstrona1.html"
-            ><img src="/imgs/protaetia-netocia-cuprea-cuprea.jpg"
-          /></a>
-          <div class="tekst">
-            <strong>Wiktor's beetle:</strong><br />
-            Discover the fascinating world of <strong>Protaetia cuprea</strong>, a beetle
-            renowned for its iridescent sheen and intricate behaviors. Delve
-            into its unique ecological role and evolutionary adaptations,
-            unveiling insights into the intricate tapestry of nature. Embark on
-            a captivating journey of discovery as you unravel the mysteries
-            surrounding this extraordinary beetle species.
-            <a href="/podstrona1.html" class="artLink">Read more</a>
-          </div>
-        </div>
-        <div>
-          <div class="tekst">
-            <strong>Mateusz' beetle:</strong><br />
-            Embark on an enthralling exploration of the magnificent <strong>Hercules
-            beetle</strong>, celebrated for its colossal size and awe-inspiring strength.
-            Dive into its remarkable habitat and learn about its impressive
-            horn-like structures, showcasing nature's incredible diversity.
-            Prepare to be captivated by tales of this mighty beetle's resilience
-            and significance in the intricate web of ecosystems.
-            <a href="/podstrona2.html" class="artLink">Read more</a>
-          </div>
-          <a href="/podstrona2.html"><img src="/imgs/hercules.webp" /></a>
-        </div>
-        <div>
-          <a href="/podstrona3.html"><img src="/imgs/lycus_trabeatus.jpg" /></a>
-          <div class="tekst">
-            <strong>Rihana's beetle:</strong><br />
-            Embark on an enchanting journey into the world of <strong>Lycus trabeatus</strong>, a
-            beetle adorned with striking colors and intricate patterns. Explore
-            its fascinating behavior, from its agile movements to its intriguing
-            social interactions within its habitat. Uncover the secrets of this
-            remarkable beetle's role in the ecosystem, as it navigates its
-            environment with grace and resilience.
-            <a href="/podstrona3.html" class="artLink">Read more</a>
-          </div>
-        </div>
-      </section>
+        <section class="mainSecWrap">
+            <div>
+                <a href="/podstrona1.html">
+                    <img src="/imgs/protaetia-netocia-cuprea-cuprea.jpg" />
+                </a>
+                <div class="tekst">
+                    <strong>Wiktor's beetle:</strong><br />
+                    Discover the fascinating world of <strong>Protaetia cuprea</strong>, a beetle
+                    renowned for its iridescent sheen and intricate behaviors. Delve
+                    into its unique ecological role and evolutionary adaptations,
+                    unveiling insights into the intricate tapestry of nature. Embark on
+                    a captivating journey of discovery as you unravel the mysteries
+                    surrounding this extraordinary beetle species.
+                    <a href="/podstrona1.html" class="artLink">Read more</a>
+                </div>
+            </div>
+            <div>
+                <div class="tekst">
+                    <strong>Mateusz' beetle:</strong><br />
+                    Embark on an enthralling exploration of the magnificent <strong>
+                        Hercules
+                        beetle
+                    </strong>, celebrated for its colossal size and awe-inspiring strength.
+                    Dive into its remarkable habitat and learn about its impressive
+                    horn-like structures, showcasing nature's incredible diversity.
+                    Prepare to be captivated by tales of this mighty beetle's resilience
+                    and significance in the intricate web of ecosystems.
+                    <a href="/podstrona2.html" class="artLink">Read more</a>
+                </div>
+                <a href="/podstrona2.html"><img src="/imgs/hercules.webp" /></a>
+            </div>
+            <div>
+                <a href="/podstrona3.html"><img src="/imgs/lycus_trabeatus.jpg" /></a>
+                <div class="tekst">
+                    <strong>Rihana's beetle:</strong><br />
+                    Embark on an enchanting journey into the world of <strong>Lycus trabeatus</strong>, a
+                    beetle adorned with striking colors and intricate patterns. Explore
+                    its fascinating behavior, from its agile movements to its intriguing
+                    social interactions within its habitat. Uncover the secrets of this
+                    remarkable beetle's role in the ecosystem, as it navigates its
+                    environment with grace and resilience.
+                    <a href="/podstrona3.html" class="artLink">Read more</a>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; background: var(--olivine) ; padding: 0">
+                <button onclick="pickRandomLink()" id="btnWrap">More Beetles!</button>
+            </div>
+        </section>
     </main>
 
     <footer>
