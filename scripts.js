@@ -123,7 +123,6 @@ function switchMoved() {
   console.log(localStorage.getItem("isTranslated"));
 }
 
-//not working
 
 var textsArtEN = [
   {
